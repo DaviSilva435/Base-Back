@@ -1,0 +1,3928 @@
+{
+	"info": {
+		"_postman_id": "98612bf1-af78-4f37-b21b-4cdf86d6fb84",
+		"name": "API",
+		"description": "JSONs utilizados para acessar o banco de dados.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ModuloEstudante",
+			"item": [
+				{
+					"name": "TipoConhecimento",
+					"item": [
+						{
+							"name": "all",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/tipo-conhecimento/all?id=1&nome=\"Tipo\"",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"tipo-conhecimento",
+										"all"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										},
+										{
+											"key": "nome",
+											"value": "\"Tipo\""
+										}
+									]
+								},
+								"description": "\t"
+							},
+							"response": []
+						},
+						{
+							"name": "view",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/tipo-conhecimento/view/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"tipo-conhecimento",
+										"view",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nome\" : \"Curso\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/tipo-conhecimento/add",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"tipo-conhecimento",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nome\" : \"Curso\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/tipo-conhecimento/edit/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"tipo-conhecimento",
+										"edit",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/tipo-conhecimento/delete/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"tipo-conhecimento",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Conhecimento",
+					"item": [
+						{
+							"name": "all",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/conhecimento/all?id=1&nome=\"conhecimento\"&tipo_conhecimento_id=1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"conhecimento",
+										"all"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										},
+										{
+											"key": "nome",
+											"value": "\"conhecimento\""
+										},
+										{
+											"key": "tipo_conhecimento_id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "view",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/conhecimento/view/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"conhecimento",
+										"view",
+										"1"
+									]
+								},
+								"description": "\t"
+							},
+							"response": []
+						},
+						{
+							"name": "add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nome\" : \"Programação\",\n\t\"tipo_conhecimento_id\": 1\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/conhecimento/add",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"conhecimento",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nome\" : \"Programação\",\n\t\"tipo_conhecimento_id\": 1\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/conhecimento/edit/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"conhecimento",
+										"edit",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/conhecimento/delete/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"conhecimento",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "ConhecimentoEstudante",
+					"item": [
+						{
+							"name": "all",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/conhecimento-estudante/all?conhecimento_id=1&estudante_id=1&valor=true",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"conhecimento-estudante",
+										"all"
+									],
+									"query": [
+										{
+											"key": "conhecimento_id",
+											"value": "1"
+										},
+										{
+											"key": "estudante_id",
+											"value": "1"
+										},
+										{
+											"key": "valor",
+											"value": "true"
+										}
+									]
+								},
+								"description": "\t"
+							},
+							"response": []
+						},
+						{
+							"name": "view",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/conhecimento-estudante/view/1/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"conhecimento-estudante",
+										"view",
+										"1",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"estudante_id\" : 1,\n\t\"conhecimento_id\" : 1,\n\t\"valor\" : true\n}\n"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/conhecimento-estudante/add",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"conhecimento-estudante",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"estudante_id\" : 1,\n\t\"conhecimento_id\" : 1,\n\t\"valor\" : true\n}\n"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/conhecimento-estudante/edit/1/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"conhecimento-estudante",
+										"edit",
+										"1",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/conhecimento-estudante/delete/1/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"conhecimento-estudante",
+										"delete",
+										"1",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "CursoEstudante",
+					"item": [
+						{
+							"name": "all",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/curso-estudante/all?id=1&nome=\"curso\"",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"curso-estudante",
+										"all"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										},
+										{
+											"key": "nome",
+											"value": "\"curso\""
+										}
+									]
+								},
+								"description": "\t"
+							},
+							"response": []
+						},
+						{
+							"name": "view",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/curso-estudante/view/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"curso-estudante",
+										"view",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nome\" : \"Informática\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/curso-estudante/add",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"curso-estudante",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nome\" : \"Informática\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/curso-estudante/edit/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"curso-estudante",
+										"edit",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/curso-estudante/delete/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"curso-estudante",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "CursoAdicionalEstudante",
+					"item": [
+						{
+							"name": "all",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/curso-adicional-estudante/all?curso_id=1&estudante_id=1&carga_horaria=123",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"curso-adicional-estudante",
+										"all"
+									],
+									"query": [
+										{
+											"key": "curso_id",
+											"value": "1"
+										},
+										{
+											"key": "estudante_id",
+											"value": "1"
+										},
+										{
+											"key": "carga_horaria",
+											"value": "123"
+										}
+									]
+								},
+								"description": "\t"
+							},
+							"response": []
+						},
+						{
+							"name": "view",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/curso-adicional-estudante/view/1/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"curso-adicional-estudante",
+										"view",
+										"1",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"curso_id\" : 1,\n\t\"estudante_id\" : 1,\n\t\"carga_horaria\" : 123\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/curso-adicional-estudante/add",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"curso-adicional-estudante",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"curso_id\" : 1,\n\t\"estudante_id\" : 1,\n\t\"carga_horaria\" : 123\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/curso-adicional-estudante/edit/1/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"curso-adicional-estudante",
+										"edit",
+										"1",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/curso-adicional-estudante/delete/1/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"curso-adicional-estudante",
+										"delete",
+										"1",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "PeriodoCurso",
+					"item": [
+						{
+							"name": "all",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/periodo-curso/all?id=1&nome=\"Noturno\"",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"periodo-curso",
+										"all"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										},
+										{
+											"key": "nome",
+											"value": "\"Noturno\""
+										}
+									]
+								},
+								"description": "\t"
+							},
+							"response": []
+						},
+						{
+							"name": "view",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/periodo-curso/view/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"periodo-curso",
+										"view",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nome\" : \"1 Mês\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:5000/periodo-curso/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"periodo-curso",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nome\" : \"1 Mês\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:5000/periodo-curso/edit/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"periodo-curso",
+										"edit",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/periodo-curso/delete/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"periodo-curso",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "GrauInstrucao",
+					"item": [
+						{
+							"name": "all",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/grau-instrucao/all?id=1&nome=\"Grau\"",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"grau-instrucao",
+										"all"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										},
+										{
+											"key": "nome",
+											"value": "\"Grau\""
+										}
+									]
+								},
+								"description": "\t"
+							},
+							"response": []
+						},
+						{
+							"name": "view",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/grau-instrucao/view/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"grau-instrucao",
+										"view",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nome\" : \"Ensino Fundamental\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:5000/grau-instrucao/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"grau-instrucao",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nome\" : \"Ensino Fundamental\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:5000/grau-instrucao/edit/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"grau-instrucao",
+										"edit",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/grau-instrucao/delete/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"grau-instrucao",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "CategoriaHabilitacao",
+					"item": [
+						{
+							"name": "all",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/categoria-habilitacao/all?id=1&nome=\"A\"",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"categoria-habilitacao",
+										"all"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										},
+										{
+											"key": "nome",
+											"value": "\"A\""
+										}
+									]
+								},
+								"description": "\t"
+							},
+							"response": []
+						},
+						{
+							"name": "view",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/categoria-habilitacao/view/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"categoria-habilitacao",
+										"view",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nome\" : \"A\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:5000/categoria-habilitacao/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"categoria-habilitacao",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nome\" : \"A\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:5000/categoria-habilitacao/edit/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"categoria-habilitacao",
+										"edit",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/categoria-habilitacao/delete/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"categoria-habilitacao",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "TipoVeiculo",
+					"item": [
+						{
+							"name": "all",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/tipo-veiculo/all?id=1&nome=\"Aero-trem\"",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"tipo-veiculo",
+										"all"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										},
+										{
+											"key": "nome",
+											"value": "\"Aero-trem\""
+										}
+									]
+								},
+								"description": "\t"
+							},
+							"response": []
+						},
+						{
+							"name": "view",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/tipo-veiculo/view/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"tipo-veiculo",
+										"view",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nome\" : \"Aero-trem\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:5000/tipo-veiculo/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"tipo-veiculo",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nome\" : \"Aero-trem\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:5000/tipo-veiculo/edit/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"tipo-veiculo",
+										"edit",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/tipo-veiculo/delete/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"tipo-veiculo",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "CBO",
+					"item": [
+						{
+							"name": "all",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/cbo/all?id=1&nome=\"Trabalho\"&codigo=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"cbo",
+										"all"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										},
+										{
+											"key": "nome",
+											"value": "\"Trabalho\""
+										},
+										{
+											"key": "codigo",
+											"value": "1"
+										}
+									]
+								},
+								"description": "\t"
+							},
+							"response": []
+						},
+						{
+							"name": "view",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/cbo/view/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"cbo",
+										"view",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nome\" : \"Mordomo\",\n\t\"codigo\": \"01\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:5000/cbo/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"cbo",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nome\" : \"Mordomo\",\n\t\"codigo\": \"01\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:5000/cbo/edit/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"cbo",
+										"edit",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/cbo/delete",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"cbo",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "ExperienciaProfissionalEstudante",
+					"item": [
+						{
+							"name": "all",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/experiencia-profissional-estudante/all?estudante_id=1&cbo_id=1&duracao=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"experiencia-profissional-estudante",
+										"all"
+									],
+									"query": [
+										{
+											"key": "estudante_id",
+											"value": "1"
+										},
+										{
+											"key": "cbo_id",
+											"value": "1"
+										},
+										{
+											"key": "duracao",
+											"value": "2"
+										}
+									]
+								},
+								"description": "\t"
+							},
+							"response": []
+						},
+						{
+							"name": "view",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/experiencia-profissional-estudante/view/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"experiencia-profissional-estudante",
+										"view",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"cbo_id\" : 1,\n\t\"estudante_id\" : 1,\n\t\"duracao\" : 30\n}"
+								},
+								"url": {
+									"raw": "http://localhost:5000/experiencia-profissional-estudante/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"experiencia-profissional-estudante",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"cbo_id\" : 1,\n\t\"estudante_id\" : 1,\n\t\"duracao\" : 30\n}"
+								},
+								"url": {
+									"raw": "http://localhost:5000/experiencia-profissional-estudante/edit/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"experiencia-profissional-estudante",
+										"edit",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/experiencia-profissional-estudante/delete/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"experiencia-profissional-estudante",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "EstadoCivl",
+					"item": [
+						{
+							"name": "all",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/estado-civil/all?id=1&nome=\"Solteiro\"",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"estado-civil",
+										"all"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										},
+										{
+											"key": "nome",
+											"value": "\"Solteiro\""
+										}
+									]
+								},
+								"description": "\t"
+							},
+							"response": []
+						},
+						{
+							"name": "view",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/estado-civil/view/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"estado-civil",
+										"view",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nome\" : \"Solteiro\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:5000/estado-civil/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"estado-civil",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nome\" : \"Solteiro\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:5000/estado-civil/edit/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"estado-civil",
+										"edit",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/estado-civil/delete/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"estado-civil",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Escola",
+					"item": [
+						{
+							"name": "all",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/escola/all?nome=\"escola\"&cep=\"123123\"&endereco=\"rua qualquer\"&bairro=\"bairro qualquer\"&telefone=\"12341234\"&email=\"email@qualquer.com\"&cnpj=\"12312323\"&cidade_id=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"escola",
+										"all"
+									],
+									"query": [
+										{
+											"key": "nome",
+											"value": "\"escola\""
+										},
+										{
+											"key": "cep",
+											"value": "\"123123\""
+										},
+										{
+											"key": "endereco",
+											"value": "\"rua qualquer\""
+										},
+										{
+											"key": "bairro",
+											"value": "\"bairro qualquer\""
+										},
+										{
+											"key": "telefone",
+											"value": "\"12341234\""
+										},
+										{
+											"key": "email",
+											"value": "\"email@qualquer.com\""
+										},
+										{
+											"key": "cnpj",
+											"value": "\"12312323\""
+										},
+										{
+											"key": "cidade_id",
+											"value": "1"
+										}
+									]
+								},
+								"description": "\t"
+							},
+							"response": []
+						},
+						{
+							"name": "view",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/escola/view/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"escola",
+										"view",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nome\" : \"EEFM Carmo Rocha\",\n\t\"cep\" : \"60541-305\",\n\t\"endereco\" : \"Rua das Andorinhas Nº351\",\n\t\"bairro\" : \"Parquelândia\",\n\t\"cidade_id\" : 3598,\n\t\"telefone\" : \"987702019\",\n\t\"email\" : \"carmorocha@seduc.com.br\",\n\t\"cnpj\" : \"48.841.210/0001-39\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:5000/escola/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"escola",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nome\" : \"EEFM Carmo Rocha\",\n\t\"cep\" : \"60541-305\",\n\t\"endereco\" : \"Rua das Andorinhas Nº351\",\n\t\"bairro\" : \"Parquelândia\",\n\t\"cidade_id\" : 3598,\n\t\"telefone\" : \"987702019\",\n\t\"email\" : \"carmorocha@seduc.com.br\",\n\t\"cnpj\" : \"46.241.940/0001-73\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:5000/escola/edit/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"escola",
+										"edit",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/escola/delete/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"escola",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Estudante",
+					"item": [
+						{
+							"name": "all",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/estudante/all?nome=\"Joao\"&sexo=\"M\"&cep=\"123123\"&endereco=\"rua qualquer\"&bairro=\"bairro qualquer\"&telefone=\"12341234\"&celular=\"12312344\"&email=\"email@email.com\"&data_nascimento=\"2019-09-22\"&rg=\"123123123\"&cpf=\"12341234\"&nome_pai=\"Pai do joao\"&nome_mae=\"Mae do joao\"&ano=\"2019\"&habilitacao=true&conducao_propria=true&cidade_id=1&estado_civil_id=1&curso_id=1&escola_id=1&periodo_curso_id=1&grau_instrucao_id=1&categoria_habilitacao_id=1&tipo_veiculo_id=1&centro_estagio_id=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"estudante",
+										"all"
+									],
+									"query": [
+										{
+											"key": "nome",
+											"value": "\"Joao\""
+										},
+										{
+											"key": "sexo",
+											"value": "\"M\""
+										},
+										{
+											"key": "cep",
+											"value": "\"123123\""
+										},
+										{
+											"key": "endereco",
+											"value": "\"rua qualquer\""
+										},
+										{
+											"key": "bairro",
+											"value": "\"bairro qualquer\""
+										},
+										{
+											"key": "telefone",
+											"value": "\"12341234\""
+										},
+										{
+											"key": "celular",
+											"value": "\"12312344\""
+										},
+										{
+											"key": "email",
+											"value": "\"email@email.com\""
+										},
+										{
+											"key": "data_nascimento",
+											"value": "\"2019-09-22\""
+										},
+										{
+											"key": "rg",
+											"value": "\"123123123\""
+										},
+										{
+											"key": "cpf",
+											"value": "\"12341234\""
+										},
+										{
+											"key": "nome_pai",
+											"value": "\"Pai do joao\""
+										},
+										{
+											"key": "nome_mae",
+											"value": "\"Mae do joao\""
+										},
+										{
+											"key": "ano",
+											"value": "\"2019\""
+										},
+										{
+											"key": "habilitacao",
+											"value": "true"
+										},
+										{
+											"key": "conducao_propria",
+											"value": "true"
+										},
+										{
+											"key": "cidade_id",
+											"value": "1"
+										},
+										{
+											"key": "estado_civil_id",
+											"value": "1"
+										},
+										{
+											"key": "curso_id",
+											"value": "1"
+										},
+										{
+											"key": "escola_id",
+											"value": "1"
+										},
+										{
+											"key": "periodo_curso_id",
+											"value": "1"
+										},
+										{
+											"key": "grau_instrucao_id",
+											"value": "1"
+										},
+										{
+											"key": "categoria_habilitacao_id",
+											"value": "1"
+										},
+										{
+											"key": "tipo_veiculo_id",
+											"value": "1"
+										},
+										{
+											"key": "centro_estagio_id",
+											"value": "1"
+										}
+									]
+								},
+								"description": "\t"
+							},
+							"response": []
+						},
+						{
+							"name": "view",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/estudante/view/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"estudante",
+										"view",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nome\" : \"Luísa Sousa Oliveira\",\n\t\"sexo\" : \"F\",\n\t\"cep\" : \"60541-809\",\n\t\"endereco\" : \"Rua Marechal Deodoro Nº546\",\n\t\"bairro\" : \"Aldeota\",\n\t\"cidade_id\" : 305,\n\t\"telefone\" : \"34801246\",\n\t\"celular\" : \"980012233\",\n\t\"email\" : \"luisasousa345@gmail.com\",\n\t\"estado_civil_id\" : 1,\n\t\"data_nascimento\" : \"2000-10-25\",\n\t\"rg\" : \"30078912343\",\n\t\"cpf\" : \"564.691.270-96\",\n\t\"nome_pai\" : \"Mario de Sousa Campos\",\n\t\"nome_mae\" : \"Maria do Rosario Oliveira\",\n\t\"curso_id\" : 1,\n\t\"escola_id\" : 1,\n\t\"periodo_curso_id\" : 1,\n\t\"grau_instrucao_id\" : 1,\n\t\"ano\" : 2019,\n\t\"habilitacao\" : true,\n\t\"categoria_habilitacao_id\" : 1,\n\t\"conducao_propria\" : true,\n\t\"tipo_veiculo_id\" : 1,\n\t\"centro_estagio_id\" : 1\n}\n"
+								},
+								"url": {
+									"raw": "http://localhost:5000/estudante/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"estudante",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nome\" : \"Luísa Sousa Oliveira\",\n\t\"sexo\" : \"F\",\n\t\"cep\" : \"60541-809\",\n\t\"endereco\" : \"Rua Marechal Deodoro Nº546\",\n\t\"bairro\" : \"Aldeota\",\n\t\"cidade_id\" : 305,\n\t\"telefone\" : \"34801246\",\n\t\"celular\" : \"980012233\",\n\t\"email\" : \"luisasousa345@gmail.com\",\n\t\"estado_civil_id\" : 1,\n\t\"data_nascimento\" : \"25/10/2000\",\n\t\"rg\" : \"30078912343\",\n\t\"cpf\" : \"023.301.013-35\",\n\t\"nome_pai\" : \"Mario de Sousa Campos\",\n\t\"nome_mae\" : \"Maria do Rosario Oliveira\",\n\t\"curso_id\" : 1,\n\t\"escola_id\" : 1,\n\t\"periodo_curso_id\" : 1,\n\t\"grau_instrucao_id\" : 1,\n\t\"ano\" : 2019,\n\t\"habilitacao\" : true,\n\t\"categoria_habilitacao_id\" : 1,\n\t\"conducao_propria\" : true,\n\t\"tipo_veiculo_id\" : 1,\n\t\"centro_estagio_id\" : 1\n}\n"
+								},
+								"url": {
+									"raw": "http://localhost:5000/estudante/edit/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"estudante",
+										"edit",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/estudante/delete/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"estudante",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "ModuloSelecao",
+			"item": [
+				{
+					"name": "Beneficio",
+					"item": [
+						{
+							"name": "all",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/beneficio/all?nome=Beneficio&id=1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"beneficio",
+										"all"
+									],
+									"query": [
+										{
+											"key": "nome",
+											"value": "Beneficio"
+										},
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "view",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/beneficio/view/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"beneficio",
+										"view",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nome\":\"Beneficio\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/beneficio/add",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"beneficio",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nome\":\"Beneficio\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/beneficio/edit/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"beneficio",
+										"edit",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/beneficio/delete/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"beneficio",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "BeneficioVaga",
+					"item": [
+						{
+							"name": "all",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/beneficio-vaga/all",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"beneficio-vaga",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "view",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/beneficio-vaga/view/1/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"beneficio-vaga",
+										"view",
+										"1",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"valor\": 123.3,\n\t\"vaga_id\": 1,\n\t\"beneficio_id\": 1\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/beneficio-vaga/add",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"beneficio-vaga",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"valor\": 123.3,\n\t\"vaga_id\": 1,\n\t\"beneficio_id\": 1\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/beneficio-vaga/edit/1/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"beneficio-vaga",
+										"edit",
+										"1",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/beneficio-vaga/delete/1/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"beneficio-vaga",
+										"delete",
+										"1",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Vaga",
+					"item": [
+						{
+							"name": "all",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/vaga/all",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"vaga",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "view",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/vaga/view/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"vaga",
+										"view",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"contrato_empresa_id\":1,\n\t\"quantidade_vagas\":5,\n\t\"ano\":\"2019\",\n\t\"semestre\":2,\n\t\"curso_id\":1,\n\t\"sexo_preferencial\":\"M\",\n\t\"conhecimento_especifico\":\"Algum\",\n\t\"atividades_desenvolvidas\":\"Algumas\",\n\t\"responsavel_estagiario\":\"Joao Kleber\",\n\t\"email_responsavel\":\"jklebi@email.com\",\n\t\"endereco_estagiario\":\"Rua Qualquer\",\n\t\"valor_bolsa\":500.0,\n\t\"observacao\":\"Nenhuma\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/vaga/add",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"vaga",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"contrato_empresa_id\":1,\n\t\"quantidade_vagas\":5,\n\t\"ano\":\"2019\",\n\t\"semestre\":2,\n\t\"curso_id\":1,\n\t\"sexo_preferencial\":\"M\",\n\t\"conhecimento_especifico\":\"Algum\",\n\t\"atividades_desenvolvidas\":\"Algumas\",\n\t\"responsavel_estagiario\":\"Joao Kleber\",\n\t\"email_responsavel\":\"jklebi@email.com\",\n\t\"endereco_estagiario\":\"Rua Qualquer\",\n\t\"valor_bolsa\":500.0,\n\t\"observacao\":\"Nenhuma\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/vaga/edit/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"vaga",
+										"edit",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/vaga/delete/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"vaga",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "ConvocacaoVaga",
+					"item": [
+						{
+							"name": "all",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/convocacao-vaga/all",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"convocacao-vaga",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "view",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/convocacao-vaga/view/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"convocacao-vaga",
+										"view",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"vaga_id\":1,\n\t\"contrato_empresa_id\":1,\n\t\"data_convocacao\":\"2019-10-10\",\n\t\"nome_solicitante\":\"Joao Ninguem\",\n\t\"contato_solicitante\": \"87491527\",\n\t\"data_entrevista\":\"2019-10-10 10:10:10\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/convocacao-vaga/add",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"convocacao-vaga",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"vaga_id\":1,\n\t\"contrato_empresa_id\":1,\n\t\"data_convocacao\":\"2019-10-10\",\n\t\"nome_solicitante\":\"Joao Ninguem\",\n\t\"contato_solicitante\": \"87491527\",\n\t\"data_entrevista\":\"2019-10-10 10:10:10\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/convocacao-vaga/edit/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"convocacao-vaga",
+										"edit",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/convocacao-vaga/delete/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"convocacao-vaga",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "EstudanteEncaminhado",
+					"item": [
+						{
+							"name": "all",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/estudante-encaminhado/all",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"estudante-encaminhado",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "view",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/estudante-encaminhado/view/1/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"estudante-encaminhado",
+										"view",
+										"1",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"estudante_id\":2,\n\t\"convocacao_id\":1,\n\t\"contratado\": true\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/estudante-encaminhado/add",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"estudante-encaminhado",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"estudante_id\":1,\n\t\"convocacao_id\":1,\n\t\"contratado\": false\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/estudante-encaminhado/edit/1/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"estudante-encaminhado",
+										"edit",
+										"1",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/estudante-encaminhado/delete/1/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"estudante-encaminhado",
+										"delete",
+										"1",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "DiasVaga",
+					"item": [
+						{
+							"name": "all",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/dias-vaga/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"dias-vaga",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "view",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/dias-vaga/view/1/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"dias-vaga",
+										"view",
+										"1",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"hora_fim\":\"10:44:10\",\n\t\"hora_inicio\": \"10:10:10\",\n\t\"vaga_id\": 1,\n\t\"id_dia\" : 1\n}"
+								},
+								"url": {
+									"raw": "http://localhost:5000/dias-vaga/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"dias-vaga",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"hora_fim\":\"10:44:10\",\n\t\"hora_inicio\": \"10:10:10\",\n\t\"vaga_id\": 1,\n\t\"id_dia\" : 1\n}"
+								},
+								"url": {
+									"raw": "http://localhost:5000/dias-vaga/edit/1/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"dias-vaga",
+										"edit",
+										"1",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/dias-vaga/delete/1/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"dias-vaga",
+										"delete",
+										"1",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "Não definido",
+			"item": [
+				{
+					"name": "Cidade",
+					"item": [
+						{
+							"name": "all",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/cidade/all?nome=\"cidade\"&id=1&ibge=\"12321\"&uf_id=1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"cidade",
+										"all"
+									],
+									"query": [
+										{
+											"key": "nome",
+											"value": "\"cidade\""
+										},
+										{
+											"key": "id",
+											"value": "1"
+										},
+										{
+											"key": "ibge",
+											"value": "\"12321\""
+										},
+										{
+											"key": "uf_id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "view",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/cidade/view/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"cidade",
+										"view",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nome\":\"cidade\",\n\t\"ibge\":\"12312\",\n\t\"uf_id\":1\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/cidade/add",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"cidade",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nome\":\"cidade\",\n\t\"ibge\":\"12312\",\n\t\"uf_id\":1\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/cidade/edit/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"cidade",
+										"edit",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/cidade/delete/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"cidade",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Uf",
+					"item": [
+						{
+							"name": "all",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/uf/all?nome=\"estado\"&sigla=\"ES\"&id=1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"uf",
+										"all"
+									],
+									"query": [
+										{
+											"key": "nome",
+											"value": "\"estado\""
+										},
+										{
+											"key": "sigla",
+											"value": "\"ES\""
+										},
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "view",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/uf/view",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"uf",
+										"view"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nome\":\"estado\",\n\t\"sigla\":\"ES\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/uf/add",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"uf",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nome\":\"estado\",\n\t\"sigla\":\"ES\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/uf/edit/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"uf",
+										"edit",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/uf/delete/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"uf",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Roles",
+					"item": [
+						{
+							"name": "all",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/roles/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"roles",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "view",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/roles/view/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"roles",
+										"view",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\":\"master\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:5000/roles/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"roles",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\":\"minion master\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:5000/roles/edit/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"roles",
+										"edit",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/roles/delete/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"roles",
+										"delete",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "b3e58a8e-571d-47b0-ba55-2a1ea77d51ed",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "cdee5893-6d97-49be-92c6-1255cf7147a0",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "auth",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"admin\",\n\t\"password\":\"1234\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/auth",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"auth"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MiLCJqdGkiOiJjN2Y4YmE4Yy1jMDU2LTRlZWEtYWI5OC02ODEzMjI1ZTk2YzAiLCJuYmYiOjE1NjUxMDMzNTksImlhdCI6MTU2NTEwMzM1OSwiaWRlbnRpdHkiOjMsImV4cCI6MTU2NTEwNDI1OX0.l4ZbSP1X4TcjW4vrHpMER-jndNBnEOu6_QBithlXS8A",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "d7ae4fdf-9c0a-47d4-bd01-6e4dc4b464f2",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "6c7fc47b-71e3-4f60-8bd8-f58d0e30f14f",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
